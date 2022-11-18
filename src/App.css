@@ -19,14 +19,12 @@ body{
   position: absolute;
   left: 50%;
   top: 40%;
-  height: 40vmin;
   pointer-events: none;
   transform: translate(-50%, -50%);
   
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,25 +63,27 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
-  background-color: blueviolet;
+  background-color: #8826ff;
 }
 
 .geteth-bar{
+  top: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
   background-color: rgb(255, 255, 255);
   max-width: 60%;
   width: 100%;
+  position: absolute;
+  height: 80%;
   border-radius: 25px;
-  max-height: 80%;
-  height: 600px;
 }
 
 .imput-wallet-address{
   border-radius: 2px;
-  margin-left: 30px;
   outline: none;
   padding: 20px;
   width: 100%;
-  max-width: 500px;
+  max-width: 35%;
   position: absolute;
   bottom: 10%;
   left: 40%;
@@ -99,7 +99,7 @@ body{
   max-height: 60px;
   height: 100%;
   width: 100%;
-  max-width: 210px;
+  max-width: 14%;
   position: absolute;
   bottom: 10%;
   right: 15%;
