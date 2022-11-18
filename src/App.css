@@ -19,14 +19,12 @@ body{
   position: absolute;
   left: 50%;
   top: 40%;
-  height: 40vmin;
   pointer-events: none;
   transform: translate(-50%, -50%);
   
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +67,7 @@ body{
 }
 
 .geteth-bar{
+  margin-top: 50px;
   background-color: rgb(255, 255, 255);
   max-width: 60%;
   width: 100%;
@@ -83,7 +82,7 @@ body{
   outline: none;
   padding: 20px;
   width: 100%;
-  max-width: 500px;
+  max-width: 35%;
   position: absolute;
   bottom: 10%;
   left: 40%;
@@ -99,7 +98,7 @@ body{
   max-height: 60px;
   height: 100%;
   width: 100%;
-  max-width: 210px;
+  max-width: 14%;
   position: absolute;
   bottom: 10%;
   right: 15%;
