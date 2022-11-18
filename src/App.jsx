@@ -52,7 +52,7 @@ function App() {
 
             <input className='imput-wallet-address' placeholder='Enter Your Wallet Address (0x...)'></input>
             <h1 className='app-title-connected'>Alchemy University Goerli Faucet</h1>
-            <button className='Send-eth-button'>Send Me ETH</button>
+            <button className='Send-eth-button'>Send Me 0.1Ξ</button>
             </div>
             ) : (
               <div>

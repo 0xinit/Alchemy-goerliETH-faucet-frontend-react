@@ -78,7 +78,9 @@ body{
 }
 
 .imput-wallet-address{
+  border-radius: 2px;
   margin-left: 30px;
+  outline: none;
   padding: 20px;
   width: 100%;
   max-width: 500px;
