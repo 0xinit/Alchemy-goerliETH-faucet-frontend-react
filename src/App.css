@@ -63,22 +63,23 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
-  background-color: blueviolet;
+  background-color: #8826ff;
 }
 
 .geteth-bar{
-  margin-top: 50px;
+  top: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
   background-color: rgb(255, 255, 255);
   max-width: 60%;
   width: 100%;
+  position: absolute;
+  height: 80%;
   border-radius: 25px;
-  max-height: 80%;
-  height: 600px;
 }
 
 .imput-wallet-address{
   border-radius: 2px;
-  margin-left: 30px;
   outline: none;
   padding: 20px;
   width: 100%;
