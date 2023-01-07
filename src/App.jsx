@@ -10,7 +10,7 @@ function App() {
   const [isConnected, setIsConnected] = useState(false);
 
   const { ethereum } = window;
-  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  
   
     useEffect(() => {
       const { ethereum } = window; 
@@ -26,7 +26,10 @@ function App() {
     // connect wallet
     const connectWallet = async () => {
       try {
-        if (!ethereum) {
+
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        
+        if (!provider) {
           alert("Get MetaMask!");
           return;
         }
@@ -37,6 +40,9 @@ function App() {
 
         setIsConnected(true);
       } catch (error) {
+
+        alert("please install metamask!")
+
         setIsConnected(false);
       }
     };

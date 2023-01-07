@@ -105,3 +105,65 @@ body{
   right: 15%;
   transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 700px) {
+
+  .App-logo {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .app-title-connected{
+    font-size: 26px;;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 26%; 
+  }
+
+  .geteth-bar{
+    top: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(255, 255, 255);
+    max-width: 80%;
+    width: 100%;
+    position: absolute;
+    height: 80%;
+    border-radius: 25px;
+  }
+
+  .imput-wallet-address{
+    border-radius: 2px;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+    max-width: 75%;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Send-eth-button{
+    background-color: #363636;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 900;
+    margin-right: 20px;
+    max-height: 60px;
+    height: 100%;
+    width: 100%;
+    max-width: 50%;
+    position: absolute;
+    left:50%;
+    bottom: 1%;
+    transform: translate(-50%, -50%);
+  }
+}
