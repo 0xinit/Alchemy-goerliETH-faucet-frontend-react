@@ -1,22 +1,116 @@
 
 body{
-    background: linear-gradient(0.25turn, rgb(16, 199, 255), #8826ff);
-    color: white;
+  background: linear-gradient(0.25turn, rgb(16, 199, 255), #8826ff);
+  color: white;
 }
 
 #need-metamask{
-  color: red;
-  background-color: black;
-  text-align: center;
+color: red;
+background-color: black;
+text-align: center;
 }
 
 
 .App {
-  text-align: center;
+text-align: center;
 }
 
 .App-logo {
+position: absolute;
+left: 50%;
+top: 40%;
+pointer-events: none;
+transform: translate(-50%, -50%);
+
+}
+
+.App-header {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+color: white;
+}
+
+.App-link {
+color: #61dafb;
+}
+
+.app-title{
+position: absolute;
+width: 100%;
+left: 50%;
+transform: translate(-50%, -50%);
+bottom: 15%; 
+}
+
+.app-title-connected{
+position: absolute;
+color: #363636;
+width: 100%;
+left: 50%;
+transform: translate(-50%, -50%);
+bottom: 18%; 
+}
+
+.connect-bottom {
+padding: 10px;
+border-radius: 25px;
+font-size: 30px;
+position: absolute;
+bottom: 5%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgb(255, 255, 255);
+background-color: #8826ff;
+}
+
+.geteth-bar{
+top: 10%;
+margin-top: auto;
+margin-bottom: auto;
+background-color: rgb(255, 255, 255);
+max-width: 60%;
+width: 100%;
+position: absolute;
+height: 80%;
+border-radius: 25px;
+}
+
+.imput-wallet-address{
+border-radius: 2px;
+outline: none;
+padding: 20px;
+width: 100%;
+max-width: 35%;
+position: absolute;
+bottom: 10%;
+left: 40%;
+transform: translate(-50%, -50%);
+}
+
+.Send-eth-button{
+background-color: #363636;
+color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 900;
+margin-right: 20px;
+max-height: 60px;
+height: 100%;
+width: 100%;
+max-width: 14%;
+position: absolute;
+bottom: 10%;
+right: 15%;
+transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+
+.App-logo {
   position: absolute;
+  height: 37%;
   left: 50%;
   top: 40%;
   pointer-events: none;
@@ -24,46 +118,13 @@ body{
   
 }
 
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.app-title{
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: 15%; 
-}
-
 .app-title-connected{
+  font-size: 26px;;
   position: absolute;
-  color: #363636;
   width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 18%; 
-}
-
-.connect-bottom {
-  padding: 10px;
-  border-radius: 25px;
-  font-size: 30px;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
-  background-color: #8826ff;
+  top: 26%; 
 }
 
 .geteth-bar{
@@ -71,7 +132,7 @@ body{
   margin-top: auto;
   margin-bottom: auto;
   background-color: rgb(255, 255, 255);
-  max-width: 60%;
+  max-width: 80%;
   width: 100%;
   position: absolute;
   height: 80%;
@@ -83,87 +144,39 @@ body{
   outline: none;
   padding: 20px;
   width: 100%;
-  max-width: 35%;
+  max-width: 75%;
   position: absolute;
-  bottom: 10%;
-  left: 40%;
+  bottom: 15%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .Send-eth-button{
   background-color: #363636;
+  border-radius: 10px;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 900;
   margin-right: 20px;
   max-height: 60px;
   height: 100%;
   width: 100%;
-  max-width: 14%;
+  max-width: 50%;
   position: absolute;
-  bottom: 10%;
-  right: 15%;
+  left:50%;
+  bottom: 1%;
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 600px) {
-
-  .App-logo {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    
-  }
-
-  .app-title-connected{
-    font-size: 26px;;
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 26%; 
-  }
-
-  .geteth-bar{
-    top: 10%;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: rgb(255, 255, 255);
-    max-width: 80%;
-    width: 100%;
-    position: absolute;
-    height: 80%;
-    border-radius: 25px;
-  }
-
-  .imput-wallet-address{
-    border-radius: 2px;
-    outline: none;
-    padding: 20px;
-    width: 100%;
-    max-width: 75%;
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .Send-eth-button{
-    background-color: #363636;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 10px;
-    font-weight: 900;
-    margin-right: 20px;
-    max-height: 60px;
-    height: 100%;
-    width: 100%;
-    max-width: 50%;
-    position: absolute;
-    left:50%;
-    bottom: 1%;
-    transform: translate(-50%, -50%);
-  }
+.connect-bottom {
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 30px;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  background-color: #8826ff;
+}
 }
